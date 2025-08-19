@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hubungi kami di Padukuhan Nasri. Dapatkan informasi alamat, telepon, dan email Kepala Dukuh serta kirimkan pesan melalui formulir kontak.">
+  <title>Kontak Padukuhan Nasri</title>
+  <link rel="icon" type="image/png" href="images/nasri.png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/kontak.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo-group">
+         <a href="index.html">
+          <img src="images/logo-no-bg.png" alt="Logo KKN 117 Nasri" class="logo-kkn">
+         </a>
+         <a href="index.html#filosofi-logo">
+          <img src="images/nasri.png" alt="Logo Padukuhan Nasri" class="logo-nasri">
+         </a>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+          <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-menu"> <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="demografi.html">Demografi</a></li>
+        <li><a href="potensi.html">Potensi</a></li>
+        <li><a href="fasilitas.html">Sarana & Prasarana</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="kontak.html" class="active">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <header class="hero-header">
+      <div class="container">
+        <h1>Hubungi Kami</h1>
+        <p>Informasi kontak untuk berinteraksi dengan Padukuhan Nasri</p>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <div class="container">
+        <section class="content-section">
+          <h2>Hubungi Kami</h2>
+          <hr class="pemisah-judul">
+
+          <div class="kontak-grid">
+            <div class="kontak-info">
+              <h3>Detail Kontak</h3>
+              <ul class="kontak-list">
+                <li>
+                  <div class="list-label">
+                    <i class="fas fa-user-tie icon-kontak"></i>
+                    <span>Kepala Dukuh</span>
+                  </div>
+                  <span class="list-colon">:</span>
+                  <span class="list-value">Zamzuri Latief</span>
+                </li>
+                <li>
+                  <div class="list-label">
+                    <i class="fas fa-map-marker-alt icon-kontak"></i>
+                    <span>Alamat</span>
+                  </div>
+                  <span class="list-colon">:</span>
+                  <span class="list-value">5563, Joglo DK-III Nasri, Sumbersari, Moyudan, Sleman, DIY.</span>
+                </li>
+                <li>
+                  <div class="list-label">
+                    <i class="fas fa-phone-alt icon-kontak"></i>
+                    <span>Telepon</span>
+                  </div>
+                  <span class="list-colon">:</span>
+                  <span class="list-value"><a href="tel:+6287716617444">+6287716617444</a></span>
+                </li>
+                <li>
+                  <div class="list-label">
+                    <i class="fas fa-envelope icon-kontak"></i>
+                    <span>Email</span>
+                  </div>
+                  <span class="list-colon">:</span>
+                  <span class="list-value"><a href="mailto:zamzurilatief5@gmail.com">zamzurilatief5@gmail.com</a></span>
+                </li>
+              </ul>
+              <p class="kontak-motto">Kami sangat terbuka untuk kolaborasi dan kunjungan.</p>
+            </div>
+
+            <div class="kontak-form">
+              <h3>Kirim Pesan</h3>
+              <form action="https://formspree.io/f/xldnqkry" method="POST" class="form-kontak">
+                <div class="form-group">
+                  <label for="nama">Nama Lengkap:</label>
+                  <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Anda:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="subjek">Subjek:</label>
+                  <input type="text" id="subjek" name="subjek">
+                </div>
+                <div class="form-group">
+                  <label for="pesan">Pesan Anda:</label>
+                  <textarea id="pesan" name="pesan" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Kirim Pesan</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Lokasi Padukuhan Nasri</h2>
+            <hr class="pemisah-judul">
+            <p>Lihat lokasi kami di peta interaktif:</p>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.61562766778!2d110.26610788053013!3d-7.780084566845822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af712d477172b%3A0x799783280cfea584!2sNasri%2C%20Sumbersari%2C%20Kec.%20Moyudan%2C%20Kabupaten%20Sleman%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1752289026024!5m2!1sid!2sid"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <div class="container footer-layout">
+        <div class="footer-section footer-info-cepat">
+            <h3>Informasi Cepat</h3>
+            <ul>
+                <li><a href="tentang.html">Tentang Padukuhan</a></li>
+                <li><a href="demografi.html">Demografi</a></li>
+                <li><a href="potensi.html">Potensi Padukuhan</a></li>
+                <li><a href="fasilitas.html">Sarana & Prasarana</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+        <div class="footer-section footer-kontak">
+            <h3>Hubungi Kami</h3>
+            <address>
+                <strong>Kepala Dusun Nasri:</strong> Zamzuri Latief<br>
+                <strong>Alamat:</strong> 55563, Joglo DK-III Nasri, Sumbersari, Moyudan, Sleman, DIY. <br>
+                <strong>Telepon:</strong> +6287716617444<br>
+                <strong>Email:</strong> zamzurilatief5@gmail.com<br>
+            </address>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 KKN UIN Sunan Kalijaga Yogyakarta - Padukuhan Nasri. Hak Cipta Dilindungi.</p>
+        </div>
+    </div>
+  </footer>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
