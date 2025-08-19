@@ -1,0 +1,122 @@
+/* --- Gaya Khusus Halaman Kontak (kontak.html) --- */
+
+.kontak-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+
+.kontak-info,
+.kontak-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.kontak-info h3,
+.kontak-form h3 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.kontak-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.kontak-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.kontak-list .icon-kontak {
+    font-size: 1.2em;
+    color: #007bff;
+    margin-right: 12px;
+}
+
+.kontak-motto {
+    font-style: italic;
+    color: #777;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px dashed #eee;
+}
+
+/* Form */
+.form-kontak .form-group { margin-bottom: 20px; }
+.form-kontak label { display: block; font-weight: bold; margin-bottom: 8px; }
+.form-kontak input[type="text"],
+.form-kontak input[type="email"],
+.form-kontak textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.form-kontak textarea { resize: vertical; }
+.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.btn-submit:hover { background-color: #0056b3; }
+
+/* Peta */
+.map-container {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* --- Perataan Teks dan Titik Dua --- */
+.kontak-list .icon-kontak {
+    padding-top: 2px;
+    flex-shrink: 0;
+}
+
+.list-label {
+    display: flex;
+    align-items: flex-start;
+    width: 180px; 
+    flex-shrink: 0;
+}
+
+.list-label span {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.list-colon {
+    margin: 0 4px;
+}
+
+.list-value {
+    flex: 1;
+}
+
+/* --- Responsive untuk kontak.html --- */
+@media (max-width: 768px) {
+    .kontak-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+/* Penyesuaian untuk mobile */
+@media (max-width: 480px) {
+    .list-label {
+        width: 120px; 
+    }
+}

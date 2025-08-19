@@ -1,0 +1,95 @@
+/* File: css/berita.css */
+
+/* --- Tata Letak Grid Utama --- */
+.berita-grid {
+    display: grid;
+    /* Membuat kolom yang fleksibel, minimal 300px */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* --- Gaya untuk Setiap Kartu Berita --- */
+.berita-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.berita-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.berita-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Memastikan gambar pas tanpa distorsi */
+}
+
+.berita-card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Penting agar tombol "Baca Selengkapnya" selalu di bawah */
+}
+
+.berita-card-content .tanggal-berita {
+    font-size: 0.85em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.berita-card-content h3 {
+    font-size: 1.3em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    flex-grow: 1; /* Mendorong tombol ke bawah */
+}
+
+.berita-card-content h3 a {
+    text-decoration: none;
+    color: inherit; /* Mewarisi warna dari h3 */
+    transition: color 0.3s ease;
+}
+
+.berita-card-content h3 a:hover {
+    color: #007bff;
+}
+
+/* Menggunakan kembali style tombol dari index.css */
+.berita-card-content .btn-read-more {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    align-self: flex-start; /* Tombol rata kiri */
+    margin-top: auto; /* Mendorong tombol ke posisi paling bawah */
+}
+
+.berita-card-content .btn-read-more:hover {
+    background-color: #0056b3;
+}
+
+/* --- Penyesuaian untuk Tampilan Mobile --- */
+@media (max-width: 768px) {
+    .berita-grid {
+        /* Di layar kecil, tampilkan 1 kolom saja */
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .berita-card-content h3 {
+        font-size: 1.2em;
+    }
+}

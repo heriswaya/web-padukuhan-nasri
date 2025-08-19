@@ -1,0 +1,406 @@
+/* --- 1. Reset CSS Dasar & Gaya Global --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding-top: 60px; /* Sesuaikan dengan tinggi nav bar */
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+  margin-top: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- 2. Header & Navigasi --- */
+nav {
+    background-color: #fff;
+    padding: 10px 20px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-nasri,
+.logo-kkn {
+    height: 40px;
+    width: auto;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    padding: 8px 12px;
+    transition: color 0.3s;
+}
+
+.nav-menu li a.active {
+  color: #007bff;
+}
+
+.nav-menu li a:hover {
+    color: #007bff;
+}
+
+.menu-toggle {
+    display: none; /* Sembunyikan di desktop */
+}
+
+/* --- 3. Hero Header (Judul Halaman) --- */
+.hero-header {
+    background-color: #fff;
+    padding: 40px 20px 20px 20px;
+}
+
+.hero-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.hero-header p {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: left;
+    font-style: italic;
+}
+
+/* --- 4. Main Layout & Sidebar --- */
+.main-layout {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px 40px 20px;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.content-wrapper {
+    flex: 2;
+    min-width: 300px;
+    max-width: 800px;
+}
+
+.content-section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.content-section h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.pemisah-judul {
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.sidebar {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-widget {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+/* --- Gaya untuk Meta Info Berita (Tanggal & Penulis) --- */
+.meta-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.meta-info-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #777;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+.meta-info span, .meta-info-sidebar span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* --- 5. Footer --- */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px 0 20px 0;
+    margin-top: 40px;
+}
+
+.footer-layout {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 0 10px;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.footer-section address {
+    font-style: normal;
+    color: #bbb;
+    line-height: 1.8;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.85em;
+    color: #bbb;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+
+/* --- 6. Responsive (Umum) --- */
+@media (max-width: 768px) {
+    body {
+        padding-top: 50px;
+    }
+    .container {
+        width: 95%;
+    }
+    .main-layout {
+        flex-direction: column;
+        padding: 20px 10px;
+        gap: 30px;
+    }
+    .content-wrapper, .sidebar {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+    nav {
+        padding: 8px 10px;
+    }
+    .nav-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+    .logo-nasri, .logo-kkn {
+        height: 35px;
+    }
+    .menu-toggle {
+        display: block;
+        font-size: 1.8em;
+        color: #333;
+        cursor: pointer;
+    }
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        z-index: 998;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .nav-menu.active {
+        display: flex;
+    }
+    .nav-menu li {
+        width: 100%;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .nav-menu li:last-child { border-bottom: none; }
+    .nav-menu li a {
+        padding: 15px 0;
+        width: 100%;
+        display: block;
+    }
+    .hero-header h1 { font-size: 2em; text-align: center; }
+    .hero-header p { font-size: 1em; text-align: center; }
+    .content-section {
+        padding: 25px;
+    }
+    .content-section h2 { font-size: 1.6em; text-align: center; }
+    .content-section p, .content-section ul, .content-section ol, .content-section address {
+        font-size: 0.95em;
+        line-height: 1.7;
+        text-align: left;
+    }
+    .content-section img {
+        max-width: 100%; height: auto; display: block; margin: 15px auto; border-radius: 8px;
+    }
+    .content-section table {
+        width: 100%; display: block; overflow-x: auto; white-space: nowrap;
+    }
+    footer {
+        padding: 30px 0 15px 0;
+        margin-top: 30px;
+    }
+    .footer-layout {
+        flex-direction: column;
+        gap: 25px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 15px;
+    }
+    .footer-section {
+        padding: 0 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 45px;
+    }
+    .container {
+        width: 98%;
+    }
+    .hero-header {
+        padding: 30px 10px 15px 10px;
+    }
+    .hero-header h1 {
+        font-size: 1.5rem;
+    }
+    .hero-header p {
+        font-size: 0.85rem;
+    }
+    .content-section {
+        padding: 15px;
+    }
+    .content-section h2 {
+        font-size: 1.4em;
+    }
+    .content-section p, .content-section ul, .content-section ol, .content-section address {
+        font-size: 0.9em;
+    }
+}

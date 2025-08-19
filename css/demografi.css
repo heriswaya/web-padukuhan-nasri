@@ -1,0 +1,122 @@
+/* --- Gaya Khusus Halaman Demografi (demografi.html) --- */
+
+/* Jumlah Penduduk */
+.penduduk-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.penduduk-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.icon-penduduk {
+    font-size: 3em;
+    color: #007bff;
+}
+
+.angka-penduduk {
+    font-size: 4em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.penduduk-keterangan {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Detail Demografi */
+.demografi-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.mata-pencarian-kolom,
+.pendidikan-kolom {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: justify;
+}
+
+.demografi-detail-grid h2 {
+    font-size: 1.6em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.demografi-detail-grid ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+    text-align: justify;
+}
+
+.chart-placeholder {
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    color: #777;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* --- Gaya untuk Grafik Komposisi Usia --- */
+.chart-container {
+    width: 100%;
+    max-width: 600px; /* Batas lebar maksimum chart */
+    margin: 20px auto; /* Posisi di tengah */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.chart-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- Responsive untuk demografi.html --- */
+@media (max-width: 768px) {
+    .penduduk-section .penduduk-keterangan {
+        text-align: center;
+    }
+    .mata-pencarian-kolom p {
+        text-align: justify;
+    }
+    .demografi-detail-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .mata-pencarian-kolom,
+    .pendidikan-kolom {
+        padding: 25px;
+        text-align: justify;
+    }
+    .demografi-detail-grid h2 {
+        text-align: center;
+    }
+    .demografi-detail-grid ul {
+        margin-left: 0;
+        padding-left: 20px;
+        text-align: justify;
+    }
+}

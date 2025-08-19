@@ -1,0 +1,70 @@
+/* --- Gaya Khusus Halaman Potensi (potensi.html) --- */
+
+.justify-text { text-align: justify; }
+
+/* Grid Potensi Utama */
+.potensi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.potensi-item {
+    background-color: #f8f8f8;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.potensi-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.icon-potensi {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.potensi-item h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.potensi-item p {
+    text-align: justify;
+}
+
+/* Daftar Inisiatif Pengembangan */
+.inisiatif-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.inisiatif-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.icon-inisiatif {
+    font-size: 1.5em;
+    color: #28a745;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.inisiatif-list p {
+    margin: 0;
+    text-align: justify;
+}

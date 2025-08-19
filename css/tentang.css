@@ -1,0 +1,82 @@
+/* --- Gaya Khusus Halaman Tentang (tentang.html) --- */
+
+.justify-text { text-align: justify; }
+/* Jarak antar paragraf khusus di bagian Sejarah */
+.content-section:first-of-type p + p {
+    margin-top: 1em;
+}
+/* Layout Visi & Misi */
+.visi-misi-layout {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.visi-kolom, .misi-kolom {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.visi-kolom p, .misi-kolom p {
+    text-align: justify;
+}
+
+.visi-kolom h3,
+.misi-kolom h3 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.pemisah-vertikal-visi-misi {
+    width: 1px;
+    background-color: #eee;
+    align-self: stretch;
+    min-height: 100px;
+}
+
+/* Struktur Pemerintahan */
+.gambar-struktur-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.gambar-struktur {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.keterangan-gambar {
+    font-style: italic;
+    color: #777;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* --- Responsive untuk tentang.html --- */
+@media (max-width: 768px) {
+    .visi-misi-layout {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .content-section .justify-text,
+    .visi-kolom p,
+    .misi-kolom p {
+        text-align: justify;
+    }
+
+    .pemisah-vertikal-visi-misi {
+        display: none;
+    }
+
+    .visi-kolom, .misi-kolom {
+        padding: 0;
+    }
+}
