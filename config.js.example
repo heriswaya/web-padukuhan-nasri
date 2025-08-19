@@ -1,0 +1,6 @@
+// File: js/config.js.example
+// Ini adalah contoh file konfigurasi.
+// Salin file ini menjadi 'config.js' dan isi dengan kunci API Anda.
+
+const SPACE_ID = 'TULIS_ID_SPACE_ANDA_DI_SINI';
+const ACCESS_TOKEN = 'TULIS_TOKEN_AKSES_ANDA_DI_SINI';
