@@ -3,7 +3,6 @@
 This is the official repository for the Nasri Hamlet profile website project, developed as part of the Community Service Program (KKN) Batch 117 by students of UIN Sunan Kalijaga Yogyakarta.
 
 ![Website Homepage Screenshot](images/screenshot-homepage.png)
-*(Note: Replace `screenshot-homepage.png` with a screenshot of your website's homepage)*
 
 ---
 
@@ -39,7 +38,7 @@ This website aims to digitize and publish information about Nasri Hamlet, locate
 
 1.  **Clone this repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
+    git clone [https://github.com/heriswaya/web-padukuhan-nasri.git](https://github.com/heriswaya/web-padukuhan-nasri.git)
     ```
 2.  **Create the configuration file:**
     Copy the `js/config.js.example` file and rename it to `js/config.js`.
@@ -93,7 +92,6 @@ We would like to express our gratitude to all parties who supported this KKN pro
 Ini adalah repositori resmi untuk proyek website profil Padukuhan Nasri, yang dikembangkan sebagai bagian dari program Kuliah Kerja Nyata (KKN) Angkatan 117 oleh mahasiswa Universitas Islam Negeri Sunan Kalijaga Yogyakarta.
 
 ![Screenshot Halaman Utama Website](images/screenshot-homepage.png)
-*(Catatan: Ganti file `screenshot-homepage.png` dengan hasil tangkapan layar halaman utama website Anda)*
 
 ---
 
@@ -129,7 +127,7 @@ Website ini bertujuan untuk mendigitalkan dan mempublikasikan informasi mengenai
 
 1.  **Clone repositori ini:**
     ```bash
-    git clone [https://github.com/NAMA_USER_ANDA/NAMA_REPO_ANDA.git](https://github.com/NAMA_USER_ANDA/NAMA_REPO_ANDA.git)
+    git clone [https://github.com/heriswaya/web-padukuhan-nasri.git](https://github.com/heriswaya/web-padukuhan-nasri.git)
     ```
 2.  **Buat file konfigurasi:**
     Salin file `js/config.js.example` dan ubah namanya menjadi `js/config.js`.
